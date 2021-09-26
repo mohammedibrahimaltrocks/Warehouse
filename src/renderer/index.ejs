@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Warehouse</title>
+
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/node_modules/react-block-ui/dist/style.css">
+<script>
+ if (typeof process === 'object') {
+  const styles=[];
+  if (process.env.NODE_ENV !== 'development') {
+        styles.push('/node_modules/bootstrap/dist/css/bootstrap.min.css')
+        styles.push('/node_modules/react-block-ui/dist/style.css');
+        if (styles.length) {
+        document.write(
+          styles
+            .map((style) => '<link rel="stylesheet" href="${style}">')
+            .join('')
+        );
+      }
+  }
+ }
+</script>
+  </head>
+  <body>
+    <div id="root" class="row">
+
+    </div>
+  </body>
+  <script>
+    if (typeof process === 'object') {
+      const scripts = [];
+      if (process.env.NODE_ENV === 'development') {
+        // Dynamically insert the DLL script in development env in the
+        // renderer process
+        scripts.push('../.erb/dll/renderer.dev.dll.js');
+
+        // Dynamically insert the bundled app script in the renderer process
+        const port = process.env.PORT || 1212;
+        scripts.push('http://localhost:${port}/dist/renderer.dev.js');
+      } else {
+
+        scripts.push('./dist/renderer.prod.js');
+      }
+
+      if (scripts.length) {
+        document.write(
+          scripts
+            .map((script) => '<script defer src="${script}"><\/script>')
+            .join('')
+        );
+      }
+
+    }
+  </script>
+</html>

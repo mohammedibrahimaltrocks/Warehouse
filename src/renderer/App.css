@@ -1,0 +1,171 @@
+.logincontainer {
+  padding-top: 15%;
+}
+.frmusr {
+  padding-left: 5%;
+}
+.menu {
+  width: 25%;
+  height: 100%;
+  border: 2px;
+  border-color: darkgrey;
+  padding-left: 1%;
+  border-style: none solid none none;
+  overflow: auto;
+}
+.content {
+  width: 75%;
+  height: 100%;
+}
+.menuheader {
+  font-weight: bold !important;
+  justify-content: center;
+}
+.menubody {
+  height: 97vh;
+}
+a.disabled {
+  pointer-events: none;
+  cursor: default;
+  color: gray;
+}
+div.cardboder {
+  border-style: dashed dashed dashed solid !important;
+}
+div.clsover {
+  height: 100%;
+}
+a.rlink,
+a.rlink:hover {
+  text-decoration: none;
+  font-weight: bold;
+}
+button:hover {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+div.rowmargin {
+  margin-top: 10px;
+}
+h3.HeaderText {
+  text-align: center;
+}
+button.btnlft {
+}
+/* MODAL STYLES
+-------------------------------*/
+.jw-modal {
+  /* modal container fixed across whole screen */
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* z-index must be higher than .modal-background */
+  z-index: 1000;
+  /* enables scrolling for tall modals */
+  overflow: auto;
+}
+.jw-modal-body {
+  padding: 20px;
+  background: #fff;
+  /* margin exposes part of the modal background */
+  margin: 40px;
+}
+.jw-modal-background {
+  /* modal background fixed across whole screen */
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* semi-transparent black  */
+  background-color: #000;
+  opacity: 0.75;
+  /* z-index must be below .modal and above everything else  */
+  z-index: 900;
+}
+
+body.jw-modal-open {
+  /* body overflow is hidden to hide main scrollbar when modal window is open */
+  overflow: hidden;
+}
+.jumbotron {
+  margin-bottom: 0.8rem !important;
+}
+div.RowBottom {
+  padding-top: 1%;
+}
+label {
+  margin-bottom: 0.3rem !important;
+}
+.modal-header {
+  padding: 0.5rem 1rem !important;
+}
+.col {
+  flex-grow: 0 !important;
+}
+@page {
+  size: 5cm 4cm; /* width height */
+}
+.card-title {
+  font-size: 1rem !important;
+}
+.card-body {
+  padding: 0.5rem !important;
+}
+.h-50 {
+  padding-right: 15% !important;
+}
+.jumbotronpadding {
+  padding: 0.9% 0% 0.9% 0% !important;
+}
+.form-groupmb {
+  margin-bottom: 0% !important;
+}
+.CSVLink {
+  color: black;
+  text-decoration: none;
+}
+.CSVLink:hover {
+  color: black;
+  text-decoration: none;
+}
+.super-app-theme--Amber {
+  background-color: rgb(250, 179, 174) !important;
+}
+.super-app-theme--Amber:hover {
+  background-color: rgb(250, 179, 174) !important;
+}
+.custom-modal-style {
+  width: 100%;
+  height: 100%;
+}
+.modal-xl {
+  max-width: 100% !important;
+  max-height: 100% !important;
+  margin: 0.5em !important;
+}
+.rowBody {
+  margin-right: 0% !important;
+  margin-left: 0% !important;
+}
+.row {
+  margin-right: 0% !important;
+  margin-left: 0% !important;
+}
+.error {
+  margin-left: 5px;
+  font-size: 13px;
+  color: red;
+}
+#__react-alert__ div div div {
+  text-transform: capitalize !important;
+}
+.menuccol {
+  padding-top: 3% !important;
+}
+.popuprowpad {
+  padding-top: 0.3% !important;
+}
